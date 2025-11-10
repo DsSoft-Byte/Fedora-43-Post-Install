@@ -149,7 +149,6 @@ Domains=~.
 * Don't install these if you are using a different spin of Fedora.
 * Pop Shell - run `sudo dnf install -y gnome-shell-extension-pop-shell xprop` to install it.
 * [GSconnect](https://extensions.gnome.org/extension/1319/gsconnect/) - run `sudo dnf install nautilus-python` for full support. then `sudo firewall-cmd --permanent --zone=public --add-service=kdeconnect`
-* [Gesture Improvements](https://extensions.gnome.org/extension/4345/gesture-improvements/)
 * [Quick Settings Tweaker](https://github.com/qwreey75/quick-settings-tweaks)
 * [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
 * [Compiz Windows Effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/)
@@ -158,15 +157,7 @@ Domains=~.
 * [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
 * [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/)
 * [Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)
-* [Bluetooth Quick Connect](https://extensions.gnome.org/extension/1401/bluetooth-quick-connect/)
-* [App Indicator Support](https://extensions.gnome.org/extension/615/appindicator-support/)
-* [Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
-* [Legacy (GTK3) Theme Scheme Auto Switcher](https://extensions.gnome.org/extension/4998/legacy-gtk3-theme-scheme-auto-switcher/)
-* [Caffeine](https://extensions.gnome.org/extension/517/caffeine/)
-* [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
-* [Wireless HID](https://extensions.gnome.org/extension/4328/wireless-hid/)
 * [Logo Menu](https://extensions.gnome.org/extension/4451/logo-menu/)
-* [Space Bar](https://github.com/christopher-l/space-bar)
 
 ## Apps [Optional]
 * Packages for Rar and 7z compressed files support:
@@ -214,7 +205,20 @@ Upscaler
 Video Trimmer
 VS Codium
 yt-dlp
+vlc
 ```
+## General Gaming setup
+* Steam flatpak
+* ProtonUpQt flatpak
+* ProtonTricks flatpak
+* Heroic Games launcher
+* Use proton experimental (default) on most games. Proton GE when necessary.
+
+## Minecraft
+* Stock java works for all minecraft versions on Lunar client, although older versions require a package to be installed
+* `sudo dnf install xrandr`
+* If you dont do this, 1.8.9 and lower will return: No OpenGL context found in the current thread.
+* For Drag clicking/Mouse abusing use the provided script to change mouse debounce times.
   
 ## Theming [Optional]
 
@@ -231,8 +235,7 @@ yt-dlp
 * `sudo flatpak override --env=GTK_THEME=my-theme` 
 
 ### Icon Packs
-* https://github.com/vinceliuice/Tela-icon-theme
-* https://github.com/vinceliuice/Colloid-gtk-theme/tree/main/icon-theme
+* BigSur Black Icons
 
 ### Wallpaper
 * https://github.com/manishprivet/dynamic-gnome-wallpapers

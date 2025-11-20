@@ -110,6 +110,9 @@ sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 ## Set Hostname
 * `hostnamectl set-hostname YOUR_HOSTNAME`
 
+## Flash ESP32 / Arduino / STM32
+* ESP32/Arduino: `sudo chmod 666 /dev/ttyACM0` after plugged in
+
 ## Default Firefox start page 
 * The tweak below will make the start page the default firefox start page instead of [this](https://fedoraproject.org/start)
 * `sudo rm -f /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js`

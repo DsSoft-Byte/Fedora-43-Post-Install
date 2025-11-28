@@ -113,6 +113,11 @@ sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 ## Flash ESP32 / Arduino / STM32
 * ESP32/Arduino: `sudo chmod 666 /dev/ttyACM0` after plugged in
 
+## Setu up vecs fw build env
+`sudo dnf install git @development-tools mesa-libGL-devel libxcb-devel wget git-gui` and then
+`sudo dnf install libXinerama-devel` this is postinstall but note to myself to compile fw cd into bldc and then:
+`make arm_sdk_install` and after this can build vesc firmware like: `make x12_pro30`
+
 ## Default Firefox start page 
 * The tweak below will make the start page the default firefox start page instead of [this](https://fedoraproject.org/start)
 * `sudo rm -f /usr/lib64/firefox/browser/defaults/preferences/firefox-redhat-default-prefs.js`

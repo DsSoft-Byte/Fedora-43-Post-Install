@@ -34,6 +34,10 @@ sudo fwupdmgr update
 * Fedora doesn't enable Flatpak user-home installation by default, to enable it run:
 * `flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath>`
 
+## Python3 tkinter
+* Install tkinter with `sudo dnf install python3-tkinter`
+
+
 ## AppImage
 
 * For Appimage support install fuse:

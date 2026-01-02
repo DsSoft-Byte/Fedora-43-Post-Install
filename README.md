@@ -13,6 +13,8 @@ Things to do after installing Fedora 43
 * `reboot` (optional but recommended)
 * "sensors" (provided by lm-sensors) should return more sensors coming from ITE 8688XXX chips aswell as fan rpms.
 
+* After an kernel update, you might need to recompile and reinstall the driver.
+
 ## ComfyUI Install (AI Shizle)
 
 * We will focus here on RX 6750XT and AMD Mi50 32GB aswell as the Mi50/Radeon VII 16GB as thats what i have.

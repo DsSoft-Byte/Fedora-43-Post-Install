@@ -1,6 +1,35 @@
  # Fedora 43 Post Install Guide
 Things to do after installing Fedora 43
 
+## Gigabyte B550 Aorus Elite V2 Fans/Sensors
+
+* Gigabyte uses the ITE87XX chip for that which isnt natively supported. we need to compile the kernel driver for this one.
+* `git clone https://github.com/frankcrawford/it87`
+* `cd it87`
+* `make`
+* `make clean && make && sudo make install`
+* `echo 'options it87 ignore_resource_conflict=1' | sudo tee /etc/modprobe.d/it87.conf`
+* `echo 'it87' | sudo tee /etc/modules-load.d/it87.conf`
+* `reboot` (optional but recommended)
+* "sensors" (provided by lm-sensors) should return more sensors coming from ITE 8688XXX chips aswell as fan rpms.
+
+## ComfyUI Install (AI Shizle)
+
+* We will focus here on RX 6750XT and AMD Mi50 32GB aswell as the Mi50/Radeon VII 16GB as thats what i have.
+* Both generations are supported by the 6.2 ROCm which is latest in fedora repos as of now there are plenty of YT tutorials on how to patch later ROCms if they drop support.
+* `sudo dnf install git python3 python3-virtualenv rocm-hip rocm-libs` (if this fails bc rocm-hip and so on dont exist it aint that deep, run that then:)
+* `sudo dnf install rocm-hip rocm-hip-devel rocm-runtime rocm-smi`
+* `git clone https://github.com/comfyanonymous/ComfyUI.git`
+* `cd ComfyUI`
+* Here you could use a venv, never worked for me but you could. see: `python3 -m venv venv`, `source venv/bin/activate`
+* Install needed wheels:
+* `pip install torch torchvision torchaudio \
+  --index-url https://download.pytorch.org/whl/rocm6.3`
+* Install requirements
+* `pip install -r requirements.txt`
+* If everything went well, you can run ComfyUI now.
+* `python3 main.py`
+
 ## RPM Fusion & Terra
 
 * Fedora has disabled the repositories for a lot of free and non-free .rpm packages by default. Follow this if you want to use non-free software like Steam, Discord and some multimedia codecs etc. As a general rule of thumb it is advised to do this to get access to many mainstream useful programs.

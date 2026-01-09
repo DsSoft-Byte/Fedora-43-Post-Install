@@ -15,6 +15,16 @@ Things to do after installing Fedora 43
 
 * After an kernel update, you might need to recompile and reinstall the driver.
 
+## General Theming (Gnome)
+
+* Themes go into `/usr/share/themes`
+* Icons go into `/usr/share/icons`
+
+* I use the BigSur-black theme, download it frome gnome look (https://www.gnome-look.org/p/1399044) and extract it.
+* Copy the BigSur-Black directory out of the main BigSur-Black directory into icons using this command `mv BigSur-black/BigSur-black /usr/share/icons/BigSur-black` (do this in your downloads directory like cd into there before.
+
+* I didnt feel the need to install themes, yet. Only icons, rounded corners (default), and Dash to Dock.
+
 ## ComfyUI Install (AI Shizle)
 
 * We will focus here on RX 6750XT and AMD Mi50 32GB aswell as the Mi50/Radeon VII 16GB as thats what i have.

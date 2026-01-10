@@ -158,6 +158,12 @@ sudo dnf swap mesa-vdpau-drivers.i686 mesa-vdpau-drivers-freeworld.i686
 ## Flash ESP32 / Arduino / STM32
 * ESP32/Arduino: `sudo chmod 666 /dev/ttyACM0` after plugged in
 
+* Install Arduino IDE From arduinos AppImage
+
+* STM/STLink: `sudo dnf install stlink` and `sudo dnf install stlink-gui`
+* Tool documentation: https://github.com/stlink-org/stlink?tab=readme-ov-file
+* Use it by executing `stlink-gui`
+
 ## Setu up vecs fw build env
 `sudo dnf install git @development-tools mesa-libGL-devel libxcb-devel wget git-gui` and then
 `sudo dnf install libXinerama-devel` this is postinstall but note to myself to compile fw cd into bldc and then:

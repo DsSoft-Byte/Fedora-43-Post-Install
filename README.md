@@ -25,6 +25,9 @@ Things to do after installing Fedora 43
 
 * I didnt feel the need to install themes, yet. Only icons, rounded corners (default), and Dash to Dock.
 
+* MacTahoe is a good theme, installed it  from here
+* `https://github.com/vinceliuice/MacTahoe-gtk-theme`
+
 ## ComfyUI Install (AI Shizle)
 
 * We will focus here on RX 6750XT and AMD Mi50 32GB aswell as the Mi50/Radeon VII 16GB as thats what i have.
